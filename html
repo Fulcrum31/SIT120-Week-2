@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design Sample Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .content {
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    footer {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Web Design Sample Page</h1>
+  </header>
+  <div class="container">
+    <div class="content">
+      <h2>Responsive Web Design</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod purus non velit blandit vestibulum.</p>
+      <p>Phasellus fringilla, eros eu fermentum congue, nisl nunc egestas ante, sit amet rutrum mauris ligula id dui.</p>
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5_BLZKTncsQ%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=a61e2c5a6e61c08ea9b60460ef0777e9b1bdf3ebcb6c74cbd6ef4b7697af82f7&ipo=images" alt="Sample Image" style="max-width: 100%;">
+    </div>
+  </div>
+  <footer>
+    <p>Pass Task 2.1</p>
+  </footer>
+  <script>
+      // a. String methods
+    const text = 'Hello, World!';
+    console.log('a. String methods:');
+    console.log('Length:', text.length); // Output: 13
+    console.log('Uppercase:', text.toUpperCase()); // Output: HELLO, WORLD!
+    console.log('Substring:', text.substring(0, 5)); // Output: Hello
+    console.log('Replace:', text.replace('Hello', 'Hi')); // Output: Hi, World!
+    console.log('Split:', text.split(',')); // Output: ["Hello", " World!"]
+
+    // b. Number methods
+    const num = 42.567;
+    console.log('\nb. Number methods:');
+    console.log('Fixed:', num.toFixed(2)); // Output: 42.57
+    console.log('Integer Part:', Math.floor(num)); // Output: 42
+    console.log('Exponential:', num.toExponential(2)); // Output: 4.26e+1
+    console.log('Precision:', num.toPrecision(4)); // Output: 42.57
+    console.log('Absolute:', Math.abs(-7)); // Output: 7
+    // c. Array methods
+    const fruits = ['apple', 'banana', 'orange', 'grape'];
+    console.log('\nc. Array methods:');
+    console.log('Join:', fruits.join(', ')); // Output: "apple, banana, orange, grape"
+    console.log('Index of "orange":', fruits.indexOf('orange')); // Output: 2
+    console.log('Includes "kiwi":', fruits.includes('kiwi')); // Output: false
+    console.log('Last item:', fruits[fruits.length - 1]); // Output: "grape"
+    console.log('Sorted:', fruits.sort()); // Output: ["apple", "banana", "grape", "orange"]
+
+    // d. Date methods
+    const today = new Date();
+    console.log('\nd. Date methods:');
+    console.log('Current date:', today.toDateString()); // Output: Mon Jul 24 2023
+    console.log('Current time:', today.toTimeString()); // Output: 16:08:45 GMT+0000 (Coordinated Universal Time)
+    console.log('Day of the week (0-6):', today.getDay()); // Output: 1 (Monday)
+    console.log('Month (0-11):', today.getMonth()); // Output: 6 (July)
+    console.log('Year:', today.getFullYear()); // Output: 2023
+
+    // e. Function methods
+    function greet(name) {
+      return 'Hello, ${name}!';
+    }
+    console.log('\ne. Function methods:');
+    const sayHello = greet;
+    console.log(sayHello('John')); // Output: Hello, John!
+    const isEven = function(num) {
+      return num % 2 === 0;
+    };
+    console.log('Is 4 even?', isEven(4)); // Output: true
+  </script>
+</body>
+</html>
